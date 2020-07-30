@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Word Counter</title>
+</head>
+<body>
+
+<!-- //
+  First function, button triggers text to be displayed in following function text area.
+  My goal for this function was to access the provided war-and-peace.txt file and print the text into the following function's text area.
+
+  Currently the function includes a line that reads:
+  
+  document.getElementById("input").innerHTML = "Hello World!"
+
+  I would want it to read more or less something like this:
+
+  var textToPrint = id="textToPrint" src="war-and-peace.txt";
+
+  document.getElementById("input").innerHTML = textToPrint;
+-->
+
+<h1>Word Count App - Christiaan Venter</h1>
+
+<p>Click the button to trigger a function that will output "Hello World".</p>
+
+<button onclick="myFunction()">Click Me</button>
+
+<script>
+function myFunction() {
+  document.getElementById("input").innerHTML = "Hello World!";
+}
+</script>
+
+<!-- // Second function, calculates total number of words.-->
+
+<h2>Word Count: <span id="count">0</span></h2>
+<textarea id="input" rows="10">
+</textarea>
+
+<script src="main.js"></script>
+
+
+</body>
+</html>
